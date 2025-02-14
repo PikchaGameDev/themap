@@ -1,0 +1,72 @@
+.slider-container {
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  width: 536px;
+  height: 63px;
+  box-sizing: border-box;
+  margin-right: 4px;
+  background-image: url("../public/assets/friends_background.png");
+  background-repeat: no-repeat;
+}
+
+.slider-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 14px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.slider-arrow:hover,
+.slider-arrow:focus {
+  opacity: 1;
+}
+
+.slider-arrow--prev {
+  background-image: url("../public/assets/icon_left.png");
+  background-repeat: no-repeat;
+  left: 10px;
+}
+
+.slider-arrow--next {
+  background-image: url("../public/assets/icon_right.png");
+  background-repeat: no-repeat;
+  right: 10px;
+}
+
+.overflow-container {
+  width: 90%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: all 0.5s;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  flex: 1 0 auto;
+  width: 50px;
+  height: 51px;
+  background-image: url("../public/assets/icon_friend.png");
+  background-repeat: no-repeat;
+}
+
+.slide-empty {
+  background-image: url("../public/assets/icon_friend_empty.png");
+  background-repeat: no-repeat;
+}
